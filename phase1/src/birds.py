@@ -1,7 +1,11 @@
 class Bird:
     def fly(self):
-        print("Flying")
+        print("flying")
 
 class Ostrich(Bird):
     def fly(self):
-        raise Exception("Ostrich can't fly")
+        raise Exception("Ostriches cant fly")
+
+           
+
+

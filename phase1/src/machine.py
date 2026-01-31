@@ -1,3 +1,4 @@
+
 class Machine:
     def print(self):
         pass
