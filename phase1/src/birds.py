@@ -5,3 +5,4 @@ class Bird:
 class Ostrich(Bird):
     def fly(self):
         raise Exception("Ostrich can't fly")
+    
