@@ -1,19 +1,26 @@
-class Machine:
+from abc import ABC, abstractmethod
+class Printer(ABC):
+    @abstractmethod
     def print(self):
         pass
-
+class Scanner(ABC):
+    @abstractmethod
     def scan(self):
         pass
-
+class Fax(ABC):
+    @abstractmethod
     def fax(self):
         pass
 
-class OldPrinter(Machine):
+class OldPrinter(Printer):
     def print(self):
         print("Printing")
+class ModernPrinter(Printer,Scanner,Fax):
+    def print(self):
+        print("Modern printing")
 
     def scan(self):
-        raise Exception("Scan not supported")
+        print("scanning")
 
     def fax(self):
-        raise Exception("Fax not supported")
+        print("faxing")
