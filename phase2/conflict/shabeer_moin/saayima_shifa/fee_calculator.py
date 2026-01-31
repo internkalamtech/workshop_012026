@@ -11,6 +11,6 @@ def calculate_fee(student_type, base_fee):
     if student_type == "science":
         return base_fee + 500
     elif student_type == "commerce":
-        return base_fee + 400
+        return base_fee + 200
     else:
         return base_fee
